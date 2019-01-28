@@ -2,7 +2,7 @@
 
 int main ()
 {
-    std::cout << "TrustedQA is the greatest company in the whole wide world" << std::endl;
+    std::cout << "TrustedQA is the greatest company in the world" << std::endl;
 
     return 0;
 }
