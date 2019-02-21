@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <form action="{{ url_for('add') }}" method="get"> 
+      <p>
+        {{ form.firstname.label }}<br>
+        {{ form.firstname(size=32) }} 
+      </p>
+
+      <p>
+        {{ form.lastname.label }}<br>
+        {{ form.lastname(size=32) }} 
+      </p>
+
+      <p>
+        {{ form.email.label }}<br>
+        {{ form.email(size=32) }} 
+      </p>
+
+      <p>{{ form.add() }}</p>
+      <!-- <p>{{ form.add() }}</p>
+       <p>{{ form.delete() }}</p> -->
+    </form>     
+{% endblock %}
